@@ -1,0 +1,13 @@
+name = "OptimalPlasticityRatios"
+uuid = "9df310e8-6439-4857-a2f0-b7e5839927d7"
+authors = ["Dhruva2 <dhruvaraman@hotmail.com> and contributors"]
+version = "0.1.0"
+
+[compat]
+julia = "1.3"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
