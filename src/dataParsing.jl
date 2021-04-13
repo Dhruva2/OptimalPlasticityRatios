@@ -42,10 +42,10 @@ dropstd(A; dims=:) = dropdims(std(A; dims=dims); dims=dims)
 # end 
 
 
-# upd = [WeightDrifter.fixedNormFluctuatingNoisyGD(qual,rat*dis,dis) for qual in cQuality, dis in disturbance_sizes, rat in sysfluct_ratios, rep in num_reps]
+# upd = [OptimalPlasticityRatios.fixedNormFluctuatingNoisyGD(qual,rat*dis,dis) for qual in cQuality, dis in disturbance_sizes, rat in sysfluct_ratios, rep in num_reps]
 
 
-function extract_endmean(rec::WeightDrifter.recorder; length_to_average=100)
+function extract_endmean(rec::OptimalPlasticityRatios.recorder; length_to_average=100)
     return mean(rec.value[end-100:end])
 end
 
